@@ -1,2 +1,2 @@
 # my-first-react
-Baby's first React
+It's baby's first React
