@@ -1,0 +1,27 @@
+//Variables
+$brand_color--light: #3dccc7;
+$brand_color--dark: #00a5be;
+$brand_color--middle: #20B9C2;
+$brand_color--grey: #EFEFEF;
+
+$brand_color--action: #00a5be;
+$brand_color--header: #008ea4;
+
+
+$brand_font: "Allstate Sans W", Arial, Helvetica, sans-serif;
+$font_size--greeting: 1.5em;
+$font_size--paragraph: 1.2em;
+
+
+//Mixins
+@mixin brand-gradient($dark, $light, $middle-color) {
+    background-color: $middle-color;
+    background-image: -webkit-gradient(linear, left top, left bottom, from($dark), to($light));
+    background-image: -webkit-linear-gradient(top, $dark, $light);
+    background-image:    -moz-linear-gradient(top, $dark, $light);
+    background-image:     -ms-linear-gradient(top, $dark, $light);
+    background-image:      -o-linear-gradient(top, $dark, $light);
+    background-image:         linear-gradient(top, $dark, $light);
+    filter:            progid:DXImageTransform.Microsoft.gradient(start-colourStr='#{$dark}', end-colourStr='#{$light}');
+    background-repeat: no-repeat;
+}

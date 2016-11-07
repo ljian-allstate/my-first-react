@@ -1,0 +1,31 @@
+//Imports
+@import "master";
+
+//Variables
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: $brand_font;
+    background-color: $brand_color--grey;
+}
+
+header {
+    height: 60px;
+    width: 100%;
+    background-color: $brand_color--header;
+}
+
+main {
+    
+}
+
+.dashboard {background-color: white;}
+
+.greeting {
+    @include brand-gradient($brand_color--dark, $brand_color--light, $brand_color--middle);
+    height: 150px;
+    color: white;
+    font-size: $font_size--greeting;
+}
